@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useFetchData } from './hooks/useFetchData';
+import { transactions } from './data/sampleData';
+import RewardPortalPage from './pages/RewardPortalPage';
+import LoadingIndicator from './components/LoadingIndicator';
+import ErrorMessage from './components/ErrorMessage';
 
-function App() {
+const App = () => {
+  const mockApiCall = () => new Promise((resolve) => setTimeout(() => resolve(transactions), 1000));
+
+  const { data, loading, error } = useFetchData(mockApiCall);
+
+  if (loading) return <LoadingIndicator />;
+  if (!data || data.length === 0 || error) return <ErrorMessage />;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RewardPortalPage data={data || []} />
     </div>
   );
-}
+};
 
 export default App;
