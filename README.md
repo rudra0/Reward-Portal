@@ -1,3 +1,13 @@
+
+<img width="1440" alt="Screenshot 2024-11-24 at 5 05 00 PM" src="https://github.com/user-attachments/assets/97ddf3bb-37a6-4c05-b857-238283c45395">
+
+
+<img width="1440" alt="Screenshot 2024-11-24 at 5 04 14 PM" src="https://github.com/user-attachments/assets/97aac4de-0aac-4773-a323-5ea5cc48c64b">
+
+
+<img width="1440" alt="Screenshot 2024-11-24 at 5 04 34 PM" src="https://github.com/user-attachments/assets/a4d0bb7d-442a-4ac1-953f-947244f3b152">
+
+
 # Reward Portal Application
 
 This project is a Rewards Program Application designed to track and calculate reward points for customers based on their transactions. It includes multiple tables for managing and displaying transactions, monthly rewards, and total rewards. The application is built using React and follows modern best practices.
@@ -182,6 +192,9 @@ Total Rewards Table
 Monthly Rewards Table
 
 # Folder Structure
+
+<img width="523" alt="Screenshot 2024-11-24 at 5 06 13 PM" src="https://github.com/user-attachments/assets/405f467a-742e-45a9-9906-e7c8bc2ac49f">
+
 
 public/
 ├── logo192.png
