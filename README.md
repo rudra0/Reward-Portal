@@ -7,10 +7,7 @@ Sharing the screenshots of Reward Portal
 
 
 
-
-
 <img width="1440" alt="Screenshot 2024-11-26 at 2 42 53 PM" src="https://github.com/user-attachments/assets/41e95394-168a-4380-8c34-29df547382d2">
-
 
 
 **Above is the Monthly Rewards for employees for latest last 3 months**
@@ -21,10 +18,6 @@ Sharing the screenshots of Reward Portal
 **Above is Total Rewards Table for employees**
 
 **Adding test cases passed screenshot below**
-
-<img width="1440" alt="Screenshot 2024-11-26 at 2 44 37 PM" src="https://github.com/user-attachments/assets/3ad03fcf-244d-4872-bee7-0dea464b143a">
-
-Adding the folder structure of the Project
 
 <img width="313" alt="Screenshot 2024-11-26 at 2 48 13 PM" src="https://github.com/user-attachments/assets/9ab7d337-28e9-49e7-82c9-253311f9a5c3">
 
@@ -214,8 +207,9 @@ Monthly Rewards Table
 
 # Folder Structure
 
-<img width="523" alt="Screenshot 2024-11-24 at 5 06 13 PM" src="https://github.com/user-attachments/assets/405f467a-742e-45a9-9906-e7c8bc2ac49f">
+<img width="1440" alt="Screenshot 2024-11-26 at 2 44 37 PM" src="https://github.com/user-attachments/assets/3ad03fcf-244d-4872-bee7-0dea464b143a">
 
+Adding the folder structure of the Project
 
 public/
 ├── logo192.png
