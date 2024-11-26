@@ -1,5 +1,20 @@
 export const calculateRewards = (price) => {
-  const over100 = Math.max(0, price - 100);
-  const over50 = Math.max(0, Math.min(price - 50, 50));
-  return Math.floor(over100 * 2 + over50);
+  if (typeof price !== "number" || isNaN(price) || price <= 0) {
+    return 0; // Return 0 for invalid prices
+  }
+
+  let rewards = 0;
+
+  // Points for the amount between $50 and $100
+  if (price > 50) {
+    rewards += Math.min(price, 100) - 50; // Reward 1 point for each dollar between 50 and 100
+  }
+
+  // Points for the amount above $100
+  if (price > 100) {
+    rewards += (price - 100) * 2; // Reward 2 points for each dollar above 100
+  }
+
+  // Round the result to two decimal places and return as a number
+  return parseFloat(rewards.toFixed(2));
 };

@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { calculateRewards } from '../../utils/calculateRewards';
 import { TEXTS } from '../../constants/textConstants';
 
+// Row component for displaying individual customer rewards
 const TotalRewardRow = React.memo(({ customerName, points }) => (
   <tr>
     <td>{customerName}</td>
@@ -12,16 +13,22 @@ const TotalRewardRow = React.memo(({ customerName, points }) => (
 const TotalRewardsTable = ({ data }) => {
   // Aggregate total rewards by customer for the last 3 months
   const totalRewards = useMemo(() => {
-    return data?.reduce((acc, { customerName, price }) => {
+    if (!data || data.length === 0) return {}; // Handle empty data gracefully
+
+    return data.reduce((acc, { customerName, price }) => {
       acc[customerName] = acc[customerName] || 0;
-      acc[customerName] += calculateRewards(price);
+      // Calculate rewards and ensure we handle invalid prices
+      const rewardPoints = calculateRewards(price);
+      acc[customerName] += rewardPoints || 0; // Add 0 if NaN or invalid
       return acc;
     }, {});
   }, [data]);
 
   return (
     <div>
-      <h2>{TEXTS.TOTAL_REWARDS}</h2>
+      <div className="transaction-header">
+        <h2 className="transaction-title">{TEXTS.TOTAL_REWARDS}</h2>
+      </div>
       <table>
         <thead>
           <tr>
@@ -45,4 +52,5 @@ const TotalRewardsTable = ({ data }) => {
   );
 };
 
-export default TotalRewardsTable
+
+export default TotalRewardsTable;

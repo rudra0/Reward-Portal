@@ -1,6 +1,5 @@
 import log from 'loglevel';
 
-// Set default log level (can be adjusted based on environment)
 const defaultLevel = process.env.NODE_ENV === 'production' ? 'warn' : 'debug';
 log.setLevel(defaultLevel);
 
@@ -14,7 +13,5 @@ const logger = {
   getLevel: () => log.getLevel(),
 };
 
-// Example of changing log level dynamically
-// logger.setLevel('info');
 
 export default logger;

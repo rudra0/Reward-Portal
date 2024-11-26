@@ -47,7 +47,7 @@ export const transactions = [
   // April 2024
   { id: 28, customerId: 105, customerName: 'Michael', date: '2024-04-10', product: 'Monitor', price: 250.0 },
   { id: 29, customerId: 101, customerName: 'Octavio', date: '2024-04-15', product: 'Keyboard', price: 90.0 },
-  { id: 41, customerId: 101, customerName: 'Octavio', date: '2024-04-18', product: 'Paper', price: 101.40 },
+  { id: 41, customerId: 101, customerName: 'Octavio', date: '2024-04-18', product: 'Paper', price: 100.40 },
   { id: 30, customerId: 103, customerName: 'Ricardo', date: '2024-04-30', product: 'Smartphone', price: 500.0 },
 
   // May 2024

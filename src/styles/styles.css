@@ -5,13 +5,23 @@ body {
   font-family: Arial, sans-serif; 
 }
 
-h2 {
-  color: red; 
+h1 {
+  color: #005477; 
   text-align: center; 
   margin: 20px 0; 
   font-weight: bold; 
-  letter-spacing: 1px; 
-  background: linear-gradient(90deg, #ff4b2b, #ff416c); 
+  background: linear-gradient(90deg, #005477, #005477); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  animation: fadeIn 2s ease-in-out; 
+}
+
+h2 {
+  color: #005477; 
+  text-align: left; 
+  margin: 20px 0; 
+  font-weight: bold; 
+  background: linear-gradient(90deg, #005477, #005477); 
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
   animation: fadeIn 2s ease-in-out; 
@@ -51,4 +61,90 @@ td {
 tr:nth-child(even) {
   background-color: #e9ecef; 
 }
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.transaction-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.sort-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #005477;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sort-button:hover {
+  background-color: #005477;
+  transform: scale(1.05);
+}
+
+.sort-button:active {
+  transform: scale(0.98);
+}
+
+.icon {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.tab-button:hover {
+  color: #005477;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #005477;
+  color: #005477;
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 

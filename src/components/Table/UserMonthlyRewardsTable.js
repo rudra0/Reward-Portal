@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/styles.css';  // Import the CSS file
+import '../../styles/styles.css';
 import { calculateRewards } from '../../utils/calculateRewards';
 import { TEXTS } from '../../constants/textConstants';
 import { filterByMonthYear, getUniqueMonths } from '../../utils/dateUtils';
@@ -11,7 +11,9 @@ const MonthlyRewardsTable = ({ data, monthYear }) => {
 
   return (
     <div>
-      <h3>{`Rewards for ${new Date(year, month).toLocaleString('default', { month: 'long' })} ${year}`}</h3>
+      <div className="transaction-header">
+        <h2 className="transaction-title">{`Rewards for ${new Date(year, month).toLocaleString('default', { month: 'long' })} ${year}`}</h2>
+      </div>
       <table>
         <thead>
           <tr>
@@ -45,19 +47,28 @@ const MonthlyRewardsTable = ({ data, monthYear }) => {
 };
 
 const UserMonthlyRewardsTable = ({ data }) => {
+  if (!data || data.length === 0) {
+    return <p>{TEXTS.NO_DATA_AVAILABLE}</p>;
+  }
 
-  // Sorting the data by year and month during rendering
-  const sortedData = data.sort((a, b) => new Date(a.date) - new Date(b.date));
+  const sortedData = data
+    .filter((item) => !isNaN(new Date(item.date)))
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
   const uniqueMonths = getUniqueMonths(sortedData);
 
   return (
     <div>
-      <h2>User Monthly Rewards</h2>
-      {uniqueMonths.map((monthYear) => (
-        <MonthlyRewardsTable key={monthYear} data={sortedData} monthYear={monthYear} />
-      ))}
+      {uniqueMonths?.length > 0 ? (
+        uniqueMonths.map((monthYear) => (
+          <MonthlyRewardsTable key={monthYear} data={sortedData} monthYear={monthYear} />
+        ))
+      ) : (
+        <p>{TEXTS.NO_REWARDS_DATA}</p>
+      )}
     </div>
   );
 };
+
 
 export default UserMonthlyRewardsTable;

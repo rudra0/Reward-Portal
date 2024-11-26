@@ -31,4 +31,12 @@ export const TEXTS = {
   WELCOME_MESSAGE: "Welcome to Rewards Portal",
   ERROR_MESSAGE: "Something went wrong, please try again later.",
   LOADING_MESSAGE: "Loading data, please wait...",
+  NO_TOTAL_REWARDS_AVAILABLE: "No rewards available",
+  NO_TRANSACTIONS_AVAILABLE: "No Transaction Available",
+  NO_DATA_AVAILABLE: 'No Data Available',
+  NO_REWARDS_DATA: 'No rewards data available for the selected period.',
+  WELCOME_TEXT: 'Welcome to Reward Portal!!',
+
+  // Tabs Constants
+  MONTHLY_REWARDS: 'Monthly Rewards'
 };

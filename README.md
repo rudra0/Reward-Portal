@@ -45,8 +45,8 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 # Features
-
-Transactions Table: Displays detailed transaction data.
+This Application have Tabs view so that user can easily moves to preferred tabs only by clicking on Transaction, Monthly Rewards, Total Rewards Tabs
+Transactions Table: Displays detailed transaction data with a sorting data filter based on latest and oldest records.
 Total Rewards Table: Aggregates and displays reward points per customer for the last three months.
 Monthly Rewards Table: Shows rewards data grouped by month for a specific year.
 Reusable Components: Implements reusable components optimized with React.memo.
