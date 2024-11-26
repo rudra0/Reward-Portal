@@ -19,6 +19,10 @@ Sharing the screenshots of Reward Portal
 
 **Adding test cases passed screenshot below**
 
+<img width="1440" alt="Screenshot 2024-11-26 at 2 44 37 PM" src="https://github.com/user-attachments/assets/3ad03fcf-244d-4872-bee7-0dea464b143a">
+
+Adding the folder structure of the Project
+
 <img width="313" alt="Screenshot 2024-11-26 at 2 48 13 PM" src="https://github.com/user-attachments/assets/9ab7d337-28e9-49e7-82c9-253311f9a5c3">
 
 
@@ -206,10 +210,6 @@ Total Rewards Table
 Monthly Rewards Table
 
 # Folder Structure
-
-<img width="1440" alt="Screenshot 2024-11-26 at 2 44 37 PM" src="https://github.com/user-attachments/assets/3ad03fcf-244d-4872-bee7-0dea464b143a">
-
-Adding the folder structure of the Project
 
 public/
 ├── logo192.png
