@@ -1,19 +1,32 @@
+Sharing the screenshots of Reward Portal
 
-<img width="1440" alt="Screenshot 2024-11-24 at 5 05 00 PM" src="https://github.com/user-attachments/assets/97ddf3bb-37a6-4c05-b857-238283c45395">
+**Below screen is main screen having tabular feature so that user can easily switch between tabs and also set Transaction table as default **
+<img width="1440" alt="Screenshot 2024-11-26 at 2 41 05 PM" src="https://github.com/user-attachments/assets/9c596022-dbd3-4978-9b6b-4b13d26c4eca">
+
+
+
+
+
+
+
+<img width="1440" alt="Screenshot 2024-11-26 at 2 42 53 PM" src="https://github.com/user-attachments/assets/41e95394-168a-4380-8c34-29df547382d2">
+
 
 
 **Above is the Monthly Rewards for employees for latest last 3 months**
 
 
+<img width="1440" alt="Screenshot 2024-11-26 at 2 43 20 PM" src="https://github.com/user-attachments/assets/656690f2-91e3-467f-ad6d-d6ea7651ed1c">
 
+**Above is Total Rewards Table for employees**
 
+**Adding test cases passed screenshot below**
 
+<img width="1440" alt="Screenshot 2024-11-26 at 2 44 37 PM" src="https://github.com/user-attachments/assets/3ad03fcf-244d-4872-bee7-0dea464b143a">
 
+Adding the folder structure of the Project
 
-<img width="1440" alt="Screenshot 2024-11-24 at 5 04 14 PM" src="https://github.com/user-attachments/assets/97aac4de-0aac-4773-a323-5ea5cc48c64b">
-
-
-<img width="1440" alt="Screenshot 2024-11-24 at 5 04 34 PM" src="https://github.com/user-attachments/assets/a4d0bb7d-442a-4ac1-953f-947244f3b152">
+<img width="313" alt="Screenshot 2024-11-26 at 2 48 13 PM" src="https://github.com/user-attachments/assets/9ab7d337-28e9-49e7-82c9-253311f9a5c3">
 
 
 # Reward Portal Application
@@ -159,7 +172,7 @@ const totalRewards = useMemo(() => {
   }, {});
 }, [data]);
 
-MonthlyRewardsTable.js
+monthlyRewardsTable.js
 The MonthlyRewardsTable component displays reward points for each customer in a specific month and year.
 
 Filtering and Calculating Monthly Rewards:
@@ -189,7 +202,7 @@ getUniqueMonths: Returns all unique month-year combinations from the dataset for
 
 Below is an updated README.md template for your project, including explanations on how rewards are calculated and other relevant logic.
 
-Project Name: Rewards System
+Project Name: Rewards App
 Description
 This project is a Rewards System that calculates and displays transaction data, total rewards, and monthly rewards. It uses React components, hooks, and utilities to manage and display reward-related data based on transactions.
 
@@ -211,33 +224,34 @@ public/
 ├── robots.txt
 src/
 ├── __tests__/
-│   └── TransactionsTable.test.js
-│   └── TotalRewardsTable.test.js
-│   └── MonthlyRewardsTable.test.js
-├── components/
-│   ├── tables/
-│   │   ├── TransactionsTable.js
-│   │   ├── TotalRewardsTable.js
-│   │   ├── MonthlyRewardsTable.js
-│   ├── Error.js
-│   ├── Loader.js
-├── constants/
+│   └── transactionsTable.test.js
+│   └── totalRewardsTable.test.js
+│   └── monthlyRewardsTable.test.js
+├── components
+│   └── table
+│       ├── totalRewardsTable.js
+│       ├── transactionsTable.js
+│       ├── userMonthlyRewardsTable.js
+│       ├── errorMessage.js
+│       └── loadingIndicator.js
+├── constants
 │   └── textConstants.js
-├── data/
-│   └── mockData.js
-├── hooks/
+├── data
+│   └── sampleData.js
+├── hooks
 │   └── useFetchData.js
-├── pages/
-│   ├── Dashboard.js
-├── styles/
-│   ├── App.css
-│   ├── index.css
-├── utils/
+├── pages
+│   └── rewardPortalPage.js
+├── styles
+│   └── styles.css
+├── utils
 │   ├── calculateRewards.js
 │   ├── dateUtils.js
+│   ├── formatDates.js
 │   ├── logger.js
-├── App.js
-├── App.test.js
+│   └── transactionHelper.js
+├── App.css
+└── App.js
 ├── index.js
 ├── logo.svg
 ├── reportWebVitals.js
@@ -249,7 +263,7 @@ package.json
 README.md
 
 Components and Logic Explanation
-TransactionsTable.js
+transactionsTable.js
 The TransactionsTable component displays a list of transactions, showing the following details:
 
 Transaction ID
