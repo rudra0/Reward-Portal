@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import UserMonthlyRewardsTable from '../components/table/userMonthlyRewardsTable';
 import TotalRewardsTable from '../components/table/totalRewardsTable';
 import TransactionsTable from '../components/table/transactionsTable';
-import { transactions } from '../data/sampleData';
+import transactions from '../data/sampleData';
 import { getLastThreeMonthsData } from '../utils/dateUtils';
 import { TEXTS } from '../constants/textConstants';
 

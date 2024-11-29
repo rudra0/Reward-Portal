@@ -15,6 +15,6 @@ export const calculateRewards = (price) => {
     rewards += (price - 100) * 2; // Reward 2 points for each dollar above 100
   }
 
-  // Round the result to two decimal places and return as a number
-  return parseFloat(rewards.toFixed(2));
+  // Round the rewards to the nearest integer
+  return Math.round(rewards);
 };

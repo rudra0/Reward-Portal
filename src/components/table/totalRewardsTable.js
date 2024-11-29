@@ -13,7 +13,7 @@ const TotalRewardRow = React.memo(({ customerName, points }) => (
 const TotalRewardsTable = ({ data }) => {
   // Aggregate total rewards by customer for the last 3 months
   const totalRewards = useMemo(() => {
-    if (!data || data.length === 0) return {}; // Handle empty data gracefully
+    if (!data || data.length === 0) return {}; // Handle empty data
 
     return data.reduce((acc, { customerName, price }) => {
       acc[customerName] = acc[customerName] || 0;
