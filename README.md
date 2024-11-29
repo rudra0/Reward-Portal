@@ -209,11 +209,9 @@ filterByMonthYear: Filters the transactions based on the provided year and month
 getUniqueMonths: Returns all unique month-year combinations from the dataset for displaying monthly reward tables.
 
 
-# Folder Structure
+## Folder Structure
 
-<img width="298" alt="Screenshot 2024-11-29 at 11 21 24 AM" src="https://github.com/user-attachments/assets/92de2aed-584b-4af2-a092-66b59b9e3eca">
-
-
+```
 src/
 ├── __tests__/
 │   └── transactionsTable.test.js
@@ -254,6 +252,7 @@ src/
 package-lock.json
 package.json
 README.md
+```
 
 Components and Logic Explanation
 TransactionsTable.js
